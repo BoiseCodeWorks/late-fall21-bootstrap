@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <link rel="stylesheet" href="Haloween.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -14,8 +15,25 @@
   <link rel="stylesheet" href="style.css">
   <title>Cool Bootstrap Site</title>
 </head>
+<style>
+  /* This is for wire framing to see our rows/columns */
+  /* body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
 
-<body>
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  } */
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="">
   <header class="container-fluid bg-primary text-light">
     <div class="row">
       <div class="col text-center p-4 d-flex align-items-center justify-content-center">
@@ -25,7 +43,7 @@
       </div>
     </div>
   </header>
-  <main class="container">
+  <main class="container-fluid">
     <div class="row">
       <article class="col-md-9 ps-5 pt-5">
         <div class="text-center border-top border-primary border-5">
@@ -61,6 +79,60 @@
           </div>
         </div>
       </aside>
+    </div>
+    <div class="row bg-secondary text-light py-5">
+      <div class="col-md-6 text-center">
+        <img src="//placehold.it/400x400" class="img-fluid" alt="some picture">
+      </div>
+      <div class="col-md-6 p-3">
+        <h3>Some Cool Facts</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, asperiores modi ducimus corporis eaque,
+          architecto sed molestias recusandae rem deserunt, exercitationem officia eius quod totam aperiam suscipit
+          laborum molestiae! Exercitationem.</p>
+      </div>
+    </div>
+    <div class="row bg-secondary text-light py-5">
+      <div class="col-md-5 order-md-2 text-center">
+        <img src="//placehold.it/400x400" class="img-fluid" alt=" some picture">
+      </div>
+      <div class="col-md-6 p-3 order-md-1">
+        <h3>Some Cool Facts</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, asperiores modi ducimus corporis eaque,
+          architecto sed molestias recusandae rem deserunt, exercitationem officia eius quod totam aperiam suscipit
+          laborum molestiae! Exercitationem.</p>
+      </div>
+    </div>
+    <!-- HIDE on mobile class="d-none d-md-flex" -->
+    <div class="row mt-5 bg-danger">
+      <div class="col p-4">
+        <div class="p-4 bg-light shadow card-spill">
+          <div class="text-center">
+            <h3>ABOUT US</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus odit officia facere, sit velit tempora
+            animi, sunt laboriosam reprehenderit officiis beatae porro praesentium molestias perferendis esse error
+            vitae quam deleniti! Labore quam provident officiis voluptates illum aspernatur quibusdam ratione
+            necessitatibus distinctio eos. Fuga magni vitae suscipit inventore officia corporis eos sapiente, hic
+            praesentium temporibus dicta quisquam quaerat sint ratione aliquid. Non optio itaque harum ratione dolore
+            laboriosam praesentium quam id. Eaque maiores sit voluptatem corporis ea itaque, repellendus assumenda
+            provident maxime expedita ullam sequi numquam cupiditate ipsum ex esse voluptatibus? Quisquam autem dicta ea
+            voluptate minus dolorem illo incidunt minima est, officiis ut aliquid magnam inventore cupiditate nulla!
+            Sunt optio inventore ad quis dolorum facere? Ratione inventore ducimus adipisci cupiditate. Incidunt sit,
+            eveniet sequi accusantium accusamus iste repellat dolore modi tempore minima sapiente cum, eum iure quos
+            possimus a, ad quasi aspernatur iusto eaque laudantium. Ab reprehenderit corrupti aliquam porro?</p>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-secondary text-light py-5">
+      <div class="col-md-6 order-md-2 text-center">
+        <img src="//placehold.it/400x400" class="img-fluid" alt=" some picture">
+      </div>
+      <div class="col-md-6 p-3 order-md-1">
+        <h3>Some Cool Facts</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, asperiores modi ducimus corporis eaque,
+          architecto sed molestias recusandae rem deserunt, exercitationem officia eius quod totam aperiam suscipit
+          laborum molestiae! Exercitationem.</p>
+      </div>
     </div>
   </main>
   <footer class="container-fluid bg-primary text-light text-center">
